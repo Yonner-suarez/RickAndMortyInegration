@@ -31,6 +31,16 @@ function App() {
       const { access } = data;
       setAccess(data);
       access && navigate("/home");
+      return Swal.fire({
+        icon: "success",
+        title: "HELLO",
+        text: "Bienvenido!",
+        confirmButtonColor: "black",
+        background: "rgba(0, 0, 0, 0.715)",
+        color: "#fff",
+        iconColor: "rgba(172, 255, 47)",
+        width: "400px",
+      });
     } catch (error) {
       Swal.fire({
         icon: "info",
