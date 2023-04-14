@@ -1,0 +1,59 @@
+.contenedor {
+  background-color: rgb(146, 255, 3) 5;
+  margin: 0.25em;
+  font-family: cursive;
+  display: inline-flexbox;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: scroll;
+}
+.contenedor::-webkit-scrollbar {
+  background-color: transparent;
+}
+.select {
+  background-color: #000;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(172, 255, 47);
+  font-family: cursive;
+  text-align: center;
+  font-size: 15px;
+}
+.select:hover {
+  background: rgb(172, 255, 47);
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-delay: 0.25s;
+}
+.boton {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.233);
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: cursive;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(172, 255, 47);
+}
+.boton:hover {
+  background: rgba(172, 255, 47, 0.714);
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-delay: 0.25s;
+}
+.option {
+  color: rgb(172, 254, 7);
+  font-size: 15px;
+  font-family: cursive;
+  background-color: #000;
+}
+.option:hover {
+  color: #000;
+}

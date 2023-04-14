@@ -1,0 +1,100 @@
+.boton {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+  background-color: #000;
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: #fff;
+}
+.contenedor {
+  background-color: transparent;
+  margin: 2em;
+  position: relative;
+  display: inline-flex;
+  padding: 0.5em;
+  right: 0px;
+  width: 300px;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 280px;
+  background: rgb(146, 255, 3) 5;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5em;
+}
+
+.card .cardLanding {
+  position: relative;
+  width: 210px;
+  height: 240px;
+
+  box-shadow: 0 5px 10px #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.cardLanding:hover {
+  background: rgb(151, 237, 2) 90;
+  box-shadow: 0 0 10px rgb(151, 237, 2), 0 0 40px rgb(151, 237, 2),
+    0 0 80px rgb(151, 237, 2);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.card .cardInfo {
+  position: absolute;
+  width: 210px;
+  height: 250px;
+  left: 0;
+  bottom: 200px;
+  right: 0;
+  top: 140px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(45deg, rgb(151, 237, 2), rgb(153, 0, 249));
+  box-shadow: 0 5px 10px #000;
+  transition: 0.5s;
+}
+.card:hover .cardInfo {
+  left: 100%;
+  background: rgb(153, 0, 249) 90;
+  box-shadow: 0 0 10px rgb(151, 237, 2), 0 0 40px rgb(153, 0, 249),
+    0 0 80px rgb(153, 0, 249);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.img {
+  height: 90%;
+  width: 90%;
+  cursor: pointer;
+  background-position: center;
+}
+.img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+h2 {
+  /* color: rgb(255, 255, 255); */
+  color: #fff;
+  font-size: 16px;
+  text-align: center center;
+  margin: 1em;
+}
+.link {
+  text-decoration: none;
+}
+.links {
+  color: #000;
+  font-style: oblique;
+  font-display: inherit;
+  font-size: large;
+  margin: 2px;
+}

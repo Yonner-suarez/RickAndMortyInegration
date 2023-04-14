@@ -1,0 +1,42 @@
+.contenedor {
+  background-color: transparent;
+  display: inline-flex;
+}
+h1 {
+  margin-bottom: 0;
+}
+.prop {
+  font-size: xx-large;
+  font-style: oblique;
+}
+.info {
+  background-color: rgba(172, 255, 47, 0.336);
+  width: 700px;
+  height: 500px;
+  margin: 1em;
+  display: inline flex;
+}
+.img {
+  background-color: rgba(0, 0, 0, 0.533);
+  width: 350px;
+  height: 350px;
+  padding: 50px;
+  margin-top: 3em;
+  margin-left: 3em;
+  border-radius: 60%;
+}
+.imgReal {
+  width: 350px;
+  height: 350px;
+  border-radius: 60%;
+}
+.img:hover {
+  background: rgba(172, 255, 47, 0.381);
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-delay: 0s;
+}
+.imgReal:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}

@@ -1,0 +1,98 @@
+.form {
+  background-color: aqua;
+  display: inline-block;
+  width: 30em;
+  height: 40em;
+  background-color: rgba(0, 0, 0, 0.696);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img {
+  width: 400px;
+  border-radius: 10%;
+  border: 3px solid #0f0;
+  box-shadow: 0 0 10px #0f0;
+}
+.img:hover {
+  background: greenyellow;
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-duration: 0.25s;
+  transition-delay: 0.25s;
+}
+.subt {
+  color: #0f0;
+  font-size: 15px;
+  font-family: cursive;
+  font-style: oblique;
+  position: absolute;
+  left: 140px;
+}
+
+.span {
+  color: #fff;
+  font-size: 15px;
+  font-family: cursive;
+  font-style: oblique;
+}
+
+.error {
+  color: #fff;
+  font-size: 19px;
+  font-family: cursive;
+  font-style: oblique;
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.279);
+  outline: none;
+  color: #fff;
+}
+.exito {
+  color: greenyellow;
+  font-size: 19px;
+  font-family: cursive;
+  font-style: oblique;
+  width: 350px;
+  height: 50px;
+  border: none;
+  background-color: rgba(172, 255, 47, 0.245);
+  border: 3px solid greenyellow;
+  outline: none;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.error::placeholder {
+  color: #fff;
+  font-size: 19px;
+  font-family: cursive;
+  font-style: oblique;
+}
+.exito::placeholder {
+  color: greenyellow;
+  font-size: 19px;
+  font-family: cursive;
+  font-style: oblique;
+}
+
+.boton {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: rgba(172, 255, 47, 0.715);
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: cursive;
+  border: none;
+  cursor: pointer;
+}
+.boton:hover {
+  background: greenyellow;
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-delay: 0.25s;
+}

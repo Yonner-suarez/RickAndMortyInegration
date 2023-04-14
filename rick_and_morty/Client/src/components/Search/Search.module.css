@@ -1,0 +1,46 @@
+.contenedor {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.input {
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 80px;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-family: cursive;
+  background-color: transparent;
+  /* left: 270px; */
+}
+::placeholder {
+  color: #0f0;
+}
+.input:hover {
+  background: rgb(146, 255, 3) 5;
+  box-shadow: 0 0 10px rgb(146, 255, 3), 0 0 40px rgb(146, 255, 3),
+    0 0 80px rgb(146, 255, 3);
+}
+.boton {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: rgba(172, 255, 47, 0.715);
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: cursive;
+  border: none;
+  cursor: pointer;
+}
+.boton:hover {
+  background: greenyellow;
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-delay: 0.25s;
+}

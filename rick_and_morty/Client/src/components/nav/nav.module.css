@@ -1,0 +1,38 @@
+.content {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav {
+  border: 2px solid #0f0;
+  box-shadow: 0 0 10px #0f0;
+  margin-top: 0.5em;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.boton {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: rgba(172, 255, 47, 0.715);
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: cursive;
+  border: none;
+  cursor: pointer;
+  margin: 0.4em;
+}
+.boton:hover {
+  background: greenyellow;
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-delay: 0.25s;
+}
