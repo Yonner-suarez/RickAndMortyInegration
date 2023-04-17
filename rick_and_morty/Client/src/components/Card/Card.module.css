@@ -84,14 +84,17 @@
 h2 {
   /* color: rgb(255, 255, 255); */
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center center;
   margin: 1em;
+  font-family: "Chiller";
 }
 .link {
   text-decoration: none;
 }
 .links {
+  font-family: "Chiller";
+  font-size: 20px;
   color: #000;
   font-style: oblique;
   font-display: inherit;

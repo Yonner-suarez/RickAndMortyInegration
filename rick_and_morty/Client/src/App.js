@@ -40,18 +40,27 @@ function App() {
         color: "#fff",
         iconColor: "rgba(172, 255, 47)",
         width: "400px",
+        customClass: {
+          confirmButton: "custom-button",
+          icon: "icon",
+          text: "text",
+        },
       });
     } catch (error) {
-      Swal.fire({
+      return Swal.fire({
         icon: "info",
         title: "Oops...",
         text: "usuario Incorrecto!",
         footer: error.message,
         confirmButtonColor: "black",
+
         background: "rgba(0, 0, 0, 0.715)",
         color: "#fff",
         iconColor: "rgba(172, 255, 47)",
         width: "400px",
+        customClass: {
+          confirmButton: "custom-button",
+        },
       });
     }
     // const URL = "http://localhost:3001/rickandmorty/login/";
@@ -73,6 +82,9 @@ function App() {
         color: "#fff",
         iconColor: "rgba(172, 255, 47)",
         width: "400px",
+        customClass: {
+          confirmButton: "custom-button",
+        },
       });
 
     try {
@@ -91,6 +103,9 @@ function App() {
         color: "#fff",
         iconColor: "rgba(172, 255, 47)",
         width: "400px",
+        customClass: {
+          confirmButton: "custom-button",
+        },
       });
     }
 

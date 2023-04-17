@@ -11,8 +11,8 @@
   flex-direction: row;
   padding: 15px 80px;
   letter-spacing: 0.5px;
-  font-size: 20px;
-  font-family: cursive;
+  font-size: 25px;
+  font-family: "Chiller";
   background-color: transparent;
   /* left: 270px; */
 }
@@ -35,7 +35,7 @@
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
-  font-family: cursive;
+  font-family: "City Contrasts";
   border: none;
   cursor: pointer;
 }
