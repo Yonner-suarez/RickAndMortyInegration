@@ -4,6 +4,8 @@ import { addFav, removeFav } from "../../redux/action";
 import { connect } from "react-redux";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Heart, HeartFill, XCircleFill } from "react-bootstrap-icons";
+
 function Card({
   ide,
   name,
@@ -62,17 +64,12 @@ function Card({
 
       <div className={style.cardInfo}>
         {isFav ? (
-          <button className={style.boton} onClick={handleFavorite}>
-            ❤️
-          </button>
+          <HeartFill className={style.boton} onClick={handleFavorite} />
         ) : (
-          <button className={style.boton} onClick={handleFavorite}>
-            🤍
-          </button>
+          <Heart className={style.boton} onClick={handleFavorite} />
         )}
-        <button onClick={() => onClose(ide)} className={style.boton}>
-          ❌
-        </button>
+
+        <XCircleFill onClick={() => onClose(ide)} className={style.cerrar} />
 
         <Link to={`/detail/${ide}`} className={style.link}>
           <h2 className={style.links}>{name}</h2>
