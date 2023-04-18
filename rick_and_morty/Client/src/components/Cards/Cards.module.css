@@ -1,7 +1,7 @@
 .contenedor {
   background-color: rgb(146, 255, 3) 5;
   margin: 0.25em;
-  font-family: cursive;
+  font-family: "City Contrasts";
   display: inline-flexbox;
   flex-direction: row;
   justify-content: space-between;

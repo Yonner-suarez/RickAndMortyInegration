@@ -30,19 +30,21 @@
 }
 .subt {
   font-size: 50px;
-  font-family: cursive;
+  font-family: "City Contrasts";
   margin-bottom: 30px;
   margin-top: 20px;
 }
 .description {
-  font-family: cursive;
-  font-size: large;
+  font-family: "Chiller";
+  font-size: 30px;
+  font-weight: bolder;
   color: #fff;
   margin: 1em;
 }
 .description2 {
-  font-family: cursive;
+  font-family: "Chiller";
   font-size: x-large;
+  font-weight: bolder;
   color: #fff;
   margin: 1em;
   font-variant: small-caps;
@@ -52,5 +54,5 @@
   margin-left: 500px;
   margin-top: 40px;
   font-size: 30px;
-  font-family: cursive;
+  font-family: "City Contrasts";
 }

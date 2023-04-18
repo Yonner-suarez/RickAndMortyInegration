@@ -4,7 +4,7 @@ import style from "./Cards.module.css";
 export default function Cards(props) {
   return (
     <div className={style.contenedor}>
-      <h1>Rick and Morty</h1>
+      {/* <h1>Rick and Morty</h1> */}
       {props.characters.map((personaje) => {
         return (
           <Card

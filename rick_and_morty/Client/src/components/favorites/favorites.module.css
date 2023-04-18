@@ -1,7 +1,7 @@
 .contenedor {
   background-color: rgb(146, 255, 3) 5;
   margin: 0.25em;
-  font-family: cursive;
+  font-family: "City Contrasts";
   display: inline-flexbox;
   flex-direction: row;
   justify-content: space-between;
@@ -17,7 +17,7 @@
   border-radius: 10px;
   outline: none;
   border: 1px solid rgb(172, 255, 47);
-  font-family: cursive;
+  font-family: "City Contrasts";
   text-align: center;
   font-size: 15px;
 }
@@ -37,7 +37,7 @@
   text-decoration: none;
   overflow: hidden;
   transition: 0.2s;
-  font-family: cursive;
+  font-family: "City Contrasts";
   border: none;
   cursor: pointer;
   border-radius: 10px;
@@ -51,7 +51,7 @@
 .option {
   color: rgb(172, 254, 7);
   font-size: 15px;
-  font-family: cursive;
+  font-family: "City Contrasts";
   background-color: #000;
 }
 .option:hover {
