@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e56e639.css",
+    "main.js": "/static/js/main.30da2a83.js",
+    "static/media/ship-planet-morgenstern-rick-and-morty-hd-wallpaper-preview.jpg": "/static/media/ship-planet-morgenstern-rick-and-morty-hd-wallpaper-preview.80def1e2aab749fddfdd.jpg",
+    "index.html": "/index.html",
+    "main.1e56e639.css.map": "/static/css/main.1e56e639.css.map",
+    "main.30da2a83.js.map": "/static/js/main.30da2a83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e56e639.css",
+    "static/js/main.30da2a83.js"
+  ]
+}
