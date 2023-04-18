@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/RickAndMortyInegration/static/css/main.29a8221b.css",
+    "main.js": "/RickAndMortyInegration/static/js/main.30da2a83.js",
+    "static/media/wp4791034.webp": "/RickAndMortyInegration/static/media/wp4791034.2e5e2f2501a8f61897a8.webp",
+    "index.html": "/RickAndMortyInegration/index.html",
+    "main.29a8221b.css.map": "/RickAndMortyInegration/static/css/main.29a8221b.css.map",
+    "main.30da2a83.js.map": "/RickAndMortyInegration/static/js/main.30da2a83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29a8221b.css",
+    "static/js/main.30da2a83.js"
+  ]
+}
