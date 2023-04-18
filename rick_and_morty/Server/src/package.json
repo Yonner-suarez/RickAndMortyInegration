@@ -1,7 +1,7 @@
 {
-  "name": "src",
+  "name": "backend_rick_and_morty",
   "version": "1.0.0",
-  "description": "",
+  "description": "backend for rick and morty app",
   "main": "index.js",
   "scripts": {
     "test": "jest --detectOpenHandles",
