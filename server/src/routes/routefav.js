@@ -25,14 +25,18 @@ RouterFav.post(
   //   }
 );
 
-RouterFav.delete("/:id", (req, res) => {
-  const { id } = req.params;
-  try {
-    const del = deleteFav(id);
-    res.status(200).json(del);
-  } catch (error) {
-    res.status(404).json({ err: error.message });
-  }
-});
+RouterFav.delete(
+  "/:id",
+  deleteFav
+  //   (req, res) => {
+  //   const { id } = req.params;
+  //   try {
+  //     const del = deleteFav(id);
+  //     res.status(200).json(del);
+  //   } catch (error) {
+  //     res.status(404).json({ err: error.message });
+  //   }
+  // }
+);
 
 module.exports = RouterFav;
