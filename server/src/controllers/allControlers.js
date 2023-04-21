@@ -1,11 +1,14 @@
-const GetCharById = require('./GetCharById')
-const Login = require('./Login')
-const {favorites, deleteFav} = require('./handleFavorites')
-
+const GetCharById = require("./GetCharById");
+const postUser = require("./postUser");
+const { favorites, deleteFav } = require("./handleFavorites");
+const login = require("./login");
+const postFav = require("./postFav");
 
 module.exports = {
   GetCharById,
-  Login,
+  postUser,
   favorites,
   deleteFav,
-}
+  login,
+  postFav,
+};
