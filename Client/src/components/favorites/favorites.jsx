@@ -39,7 +39,7 @@ const Favorites = ({ onClose }) => {
             Descendente
           </option>
         </select>
-        {/* <select onChange={handleFilter} className={style.select}>
+        <select onChange={handleFilter} className={style.select}>
           <option value="Male" className={style.option}>
             Male
           </option>
@@ -49,10 +49,10 @@ const Favorites = ({ onClose }) => {
           <option value="Genderless" className={style.option}>
             Genderless
           </option>
-          <option value="unknow" className={style.option}>
+          <option value="unknown" className={style.option}>
             unknow
           </option>
-        </select> */}
+        </select>
         <button onClick={handleReset} className={style.boton}>
           Reset
         </button>
@@ -60,15 +60,16 @@ const Favorites = ({ onClose }) => {
       {myFavorites.map((per) => {
         return (
           <Card
-            key={per.ide}
-            ide={per.ide}
+            key={per.id}
+            id={per.id}
             name={per.name}
             species={per.species}
             gender={per.gender}
-            origin={per.origin?.name}
+            origin={per.origin}
+            status={per.status}
             image={per.image}
             onClose={() => {
-              borrarCard(per.ide);
+              borrarCard(per.id);
             }}
           />
         );

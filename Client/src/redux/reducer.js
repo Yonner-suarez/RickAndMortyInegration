@@ -1,8 +1,9 @@
-import { REMOVE_FAV, ADD_FAV, FILTER, ORDER, RESET } from "./action";
+import { REMOVE_FAV, ADD_FAV, FILTER, ORDER, RESET, USER } from "./action";
 
 const initialState = {
   myFavorites: [],
   allCharacters: [],
+  user: {},
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -28,10 +29,10 @@ const rootReducer = (state = initialState, action) => {
       };
     case ORDER:
       const newOrden = state.myFavorites.sort((a, b) => {
-        if (a.ide > b.ide) {
+        if (a.id > b.id) {
           return "A" === action.payload ? 1 : -1;
         }
-        if (a.ide < b.ide) {
+        if (a.id < b.id) {
           return "D" === action.payload ? 1 : -1;
         }
         return 0;
@@ -43,7 +44,12 @@ const rootReducer = (state = initialState, action) => {
     case RESET:
       return {
         ...state,
-        myFavorites: [...state.allCharacters],
+        myFavorites: state.allCharacters,
+      };
+    case USER:
+      return {
+        ...state,
+        user: action.payload,
       };
     default:
       return {

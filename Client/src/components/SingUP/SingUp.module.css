@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.696);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+.boton {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: rgba(172, 255, 47, 0.715);
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: "City Contrasts";
+  border: none;
+  cursor: pointer;
+}
+.boton:hover {
+  background: greenyellow;
+  box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+  transition-delay: 0.25s;
+}
+
+.span {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Chiller";
+  font-style: oblique;
+}

@@ -6,6 +6,7 @@ export const REMOVE_FAV = "REMOVE_FAV";
 export const FILTER = "FILTER";
 export const ORDER = "ORDER";
 export const RESET = "RESET";
+export const USER = "USER";
 
 export const addFav = (character) => {
   const endpoint = "http://localhost:3001/rickandmorty/fav";
@@ -91,5 +92,11 @@ export const orderCards = (orden) => {
 export const reset = () => {
   return {
     type: RESET,
+  };
+};
+export const getUser = (user) => {
+  return {
+    type: USER,
+    payload: user,
   };
 };

@@ -1,5 +1,6 @@
 import style from "./form.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import validateEmail, { validatePassword } from "../Cards/validations";
 
 const Form = ({ login }) => {
@@ -69,6 +70,11 @@ const Form = ({ login }) => {
       <button type="submit" onClick={handleSubmit} className={style.boton}>
         Login
       </button>
+      <Link to="/SingUp">
+        <button type="button" className={style.boton}>
+          SingUp
+        </button>
+      </Link>
     </form>
   );
 };

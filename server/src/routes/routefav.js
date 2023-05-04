@@ -7,21 +7,21 @@ RouterFav.post(
   "/",
   postFav
 
-  //   const { ide, name, species, gender, origin, image, onClose } = req.body;
+    // const { ide, name, species, gender, origin, image, onClose } = req.body;
 
-  //   try {
-  //     const charsFavs = favorites({
-  //       ide,
-  //       name,
-  //       species,
-  //       gender,
-  //       origin,
-  //       image,
-  //       onClose,
-  //     });
-  //     res.status(200).json(charsFavs);
-  //   } catch (error) {
-  //     res.status(404).json({ error: error.message });
+    // try {
+    //   const charsFavs = favorites({
+    //     ide,
+    //     name,
+    //     species,
+    //     gender,
+    //     origin,
+    //     image,
+    //     onClose,
+    //   });
+    //   res.status(200).json(charsFavs);
+    // } catch (error) {
+    //   res.status(404).json({ error: error.message });
   //   }
 );
 

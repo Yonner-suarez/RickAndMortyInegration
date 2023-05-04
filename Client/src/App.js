@@ -6,11 +6,15 @@ import ComponentNav from "./components/nav/nav";
 import About from "./view/About/about";
 import Detail from "./view/detail/detail";
 import Form from "./components/Form.jsx/Form";
+import SingUp from "./components/SingUP/SingUp";
 import { useState, useEffect } from "react";
 import Favorites from "./components/favorites/favorites";
 import Swal from "sweetalert2";
+import { useDispatch } from "react-redux";
+import { getUser } from "./redux/action";
 
 function App() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const [access, setAccess] = useState(false);
 
@@ -28,8 +32,9 @@ function App() {
         URL + `?email=${email}&password=${password}`
       );
       const { data } = respuesta;
-      const { access } = data;
-      setAccess(data);
+      const { access, user } = data;
+      dispatch(getUser(user));
+      setAccess(access);
       access && navigate("/home");
       return Swal.fire({
         icon: "success",
@@ -126,6 +131,16 @@ function App() {
     //     });
     //   });
   }
+  async function postUserinDbb(newUser) {
+    try {
+      const resp = await axios.post(
+        `http://localhost:3001/rickandmorty/login?email=${newUser.email}&password=${newUser.password}`
+      );
+      alert(resp.data.message);
+    } catch (error) {
+      alert(error.message);
+    }
+  }
   function onClose(id) {
     setCharacters(characters.filter((personajes) => personajes.id !== id));
   }
@@ -134,7 +149,9 @@ function App() {
 
   return (
     <div className="App">
-      {pathname !== "/" && <ComponentNav onSearch={onSearch} />}
+      {pathname !== "/" && pathname !== "/SingUp" && (
+        <ComponentNav onSearch={onSearch} />
+      )}
 
       <Routes>
         <Route path="/" element={<Form login={login} />} />
@@ -143,7 +160,7 @@ function App() {
           path="/home"
           element={<Cards characters={characters} onClose={onClose} />}
         />
-
+        <Route path="/SingUp" element={<SingUp postUser={postUserinDbb} />} />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />
       </Routes>

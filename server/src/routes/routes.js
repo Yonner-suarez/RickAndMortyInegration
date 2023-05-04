@@ -8,6 +8,8 @@ const miRouter = Router();
 miRouter.get("/character/:id", (req, res) => {
   const { id } = req.params;
 
+  console.log(id);
+
   const characters = GetCharById(id);
   characters
     .then((data) => res.status(200).json(data))

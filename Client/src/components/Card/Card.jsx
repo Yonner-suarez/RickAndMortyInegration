@@ -1,53 +1,52 @@
 import style from "./Card.module.css";
 import { Link } from "react-router-dom";
 import { addFav, removeFav } from "../../redux/action";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Heart, HeartFill, XCircleFill } from "react-bootstrap-icons";
 
 function Card({
-  ide,
+  id,
   name,
   species,
   gender,
   origin,
+  status,
   image,
   onClose,
   addFav,
   removeFav,
   myFavorites,
 }) {
+  const { user } = useSelector((state) => state);
+  const [isFav, setIsFav] = useState(false);
   useEffect(() => {
     myFavorites.forEach((fav) => {
-      if (fav.ide === ide) {
+      if (fav.id == id) {
         setIsFav(true);
       }
     });
-
-    // for (let i = 0; i < myFavorites.length; i++)
-    //   if (myFavorites[i].id === ide) {
-    //     setIsFav(true);
-    //   }
   }, [myFavorites]);
-  const [isFav, setIsFav] = useState(false);
 
   const handleFavorite = () => {
     if (isFav === true) {
       setIsFav(false);
-      removeFav(ide);
+      removeFav(id);
     } else {
       setIsFav(true);
       addFav({
-        ide,
+        id,
         name,
         species,
         gender,
+        status,
         origin,
         image,
         onClose,
         addFav,
         removeFav,
+        user,
       });
     }
   };
@@ -55,11 +54,12 @@ function Card({
   return (
     <div className={style.card}>
       <div className={style.cardLanding}>
-        <h2>Key: {ide}</h2>
+        <h2>Key: {id}</h2>
         <h2>Name: {name}</h2>
         <h2>Specie: {species}</h2>
         <h2>Genero: {gender}</h2>
         <h2>Origen:{origin}</h2>
+        <h2>status:{status}</h2>
       </div>
 
       <div className={style.cardInfo}>
@@ -69,12 +69,12 @@ function Card({
           <Heart className={style.boton} onClick={handleFavorite} />
         )}
 
-        <XCircleFill onClick={() => onClose(ide)} className={style.cerrar} />
+        <XCircleFill onClick={() => onClose(id)} className={style.cerrar} />
 
-        <Link to={`/detail/${ide}`} className={style.link}>
+        <Link to={`/detail/${id}`} className={style.link}>
           <h2 className={style.links}>{name}</h2>
         </Link>
-        <Link to={`/detail/${ide}`}>
+        <Link to={`/detail/${id}`}>
           <img src={image} alt="Rick" className={style.img} />
         </Link>
       </div>
