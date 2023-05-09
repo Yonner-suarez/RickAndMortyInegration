@@ -9,7 +9,7 @@ const { userM, favoriteM } = require("./models/allModels");
 
 // URL ----> postgres://DB_USER:DB_PASSWORD@DB_HOST/rickandmorty
 const sequelize = new Sequelize(
-  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
+  `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
   { logging: false }
 );
 
