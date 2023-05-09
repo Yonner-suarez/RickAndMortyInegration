@@ -13,6 +13,9 @@ import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
 import { getUser } from "./redux/action";
 
+axios.defaults.url =
+  "https://rickandmortyintegration-production.up.railway.app";
+
 function App() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -26,7 +29,7 @@ function App() {
 
   async function login(userData) {
     const { email, password } = userData;
-    const URL = "http://localhost:3001/rickandmorty/login/";
+    const URL = "/login/";
     try {
       const respuesta = await axios(
         URL + `?email=${email}&password=${password}`

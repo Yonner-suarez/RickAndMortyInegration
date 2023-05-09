@@ -9,7 +9,7 @@ export const RESET = "RESET";
 export const USER = "USER";
 
 export const addFav = (character) => {
-  const endpoint = "http://localhost:3001/rickandmorty/fav";
+  const endpoint = "/fav";
 
   try {
     return async (dispatch) => {
@@ -44,7 +44,7 @@ export const addFav = (character) => {
 // };
 
 export const removeFav = (id) => {
-  const endpoint = `http://localhost:3001/rickandmorty/fav/${id}`;
+  const endpoint = `/fav/${id}`;
   try {
     return async (dispatch) => {
       const res = await axios.delete(endpoint);
