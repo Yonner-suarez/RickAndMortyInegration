@@ -13,8 +13,8 @@ import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
 import { getUser } from "./redux/action";
 
-axios.defaults.url =
-  "https://rickandmortyintegration-production.up.railway.app";
+axios.defaults.baseURL =
+  "https://rickandmortyintegration-production.up.railway.app/rickandmorty";
 
 function App() {
   const dispatch = useDispatch();
@@ -29,7 +29,8 @@ function App() {
 
   async function login(userData) {
     const { email, password } = userData;
-    const URL = "/login/";
+    console.log(email, password);
+    const URL = "/login";
     try {
       const respuesta = await axios(
         URL + `?email=${email}&password=${password}`
@@ -96,9 +97,7 @@ function App() {
       });
 
     try {
-      const respuesta = await axios(
-        `http://localhost:3001/rickandmorty/character/${id}`
-      );
+      const respuesta = await axios(`/character/${id}`);
       const { data } = respuesta;
       setCharacters((characters) => [...characters, data]);
     } catch (error) {
@@ -137,7 +136,7 @@ function App() {
   async function postUserinDbb(newUser) {
     try {
       const resp = await axios.post(
-        `http://localhost:3001/rickandmorty/login?email=${newUser.email}&password=${newUser.password}`
+        `/login?email=${newUser.email}&password=${newUser.password}`
       );
       alert(resp.data.message);
     } catch (error) {
