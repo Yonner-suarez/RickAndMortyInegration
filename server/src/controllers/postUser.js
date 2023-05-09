@@ -2,7 +2,6 @@ require("dotenv").config();
 const { User } = require("../DB_connection");
 
 const postUser = async (email, password) => {
-  console.log(email, password);
 
   if (!email || !password) throw new Error("Faltan datos");
 
