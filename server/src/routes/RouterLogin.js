@@ -3,7 +3,7 @@ const { postUser, login } = require("../controllers/allControlers");
 
 const RouterLogin = Router();
 
-RouterLogin.get("/", login);
+// RouterLogin.get("/", login);
 
 RouterLogin.post("/", async (req, res) => {
   const { email, password } = req.query;
