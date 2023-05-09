@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const app = express();
 const miRouter = require("./routes/routes");
-
+const { cors } = require("cors");
 app.use((req, res, next) => {
   res.header(
     "Access-Control-Allow-Origin",
@@ -17,6 +17,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use(morgan("dev"));
+app.use(cors());
 app.use(express.json());
 
 app.use("/rickandmorty", miRouter);
