@@ -29,12 +29,12 @@ function App() {
 
   async function login(userData) {
     const { email, password } = userData;
-    console.log(email, password);
     const URL = "/login";
     try {
       const respuesta = await axios(
         URL + `?email=${email}&password=${password}`
       );
+
       const { data } = respuesta;
       const { access, user } = data;
       dispatch(getUser(user));
