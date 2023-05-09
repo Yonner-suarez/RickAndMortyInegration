@@ -14,7 +14,7 @@ import { useDispatch } from "react-redux";
 import { getUser } from "./redux/action";
 
 axios.defaults.baseURL =
-  "https://rickandmortyintegration-production.up.railway.app/rickandmorty";
+  "https://rickandmortyintegration-production.up.railway.app";
 
 function App() {
   const dispatch = useDispatch();
