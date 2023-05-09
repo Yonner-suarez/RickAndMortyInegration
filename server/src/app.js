@@ -4,7 +4,10 @@ const app = express();
 const miRouter = require("./routes/routes");
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://yonner-suarez.github.io");
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://rick-and-morty-integration.vercel.app"
+  );
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
     "Access-Control-Allow-Headers",

@@ -1,11 +1,11 @@
 {
-  "name": "server",
+  "name": "api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles",
-    "start": "node index.js"
+    "start": "nodemon index.js",
+    "test": "jest --detectOpenHandles"
   },
   "keywords": [],
   "author": "",
