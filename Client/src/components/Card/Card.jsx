@@ -54,6 +54,13 @@ function Card({
   return (
     <div className={style.card}>
       <div className={style.cardLanding}>
+        {isFav ? (
+          <HeartFill className={style.boton} onClick={handleFavorite} />
+        ) : (
+          <Heart className={style.boton} onClick={handleFavorite} />
+        )}
+
+        <XCircleFill onClick={() => onClose(id)} className={style.cerrar} />
         <h2>Key: {id}</h2>
         <h2>Name: {name}</h2>
         <h2>Specie: {species}</h2>
@@ -63,20 +70,17 @@ function Card({
       </div>
 
       <div className={style.cardInfo}>
-        {isFav ? (
-          <HeartFill className={style.boton} onClick={handleFavorite} />
-        ) : (
-          <Heart className={style.boton} onClick={handleFavorite} />
-        )}
-
-        <XCircleFill onClick={() => onClose(id)} className={style.cerrar} />
-
+        {/* <Link to={`/detail/${id}`} className={style.link}>
+          <h2 className={style.links}>{name}</h2>
+        </Link>
+        <Link to={`/detail/${id}`}> */}
         <Link to={`/detail/${id}`} className={style.link}>
           <h2 className={style.links}>{name}</h2>
         </Link>
         <Link to={`/detail/${id}`}>
           <img src={image} alt="Rick" className={style.img} />
         </Link>
+        {/* </Link> */}
       </div>
     </div>
   );

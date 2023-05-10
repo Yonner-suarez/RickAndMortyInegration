@@ -1,6 +1,5 @@
 .contenedor {
-  background-color: rgb(146, 255, 3) 5;
-  margin: 0.25em;
+  background-color: rgba(146, 255, 3, 0.252);
   font-family: "City Contrasts";
   display: inline-flexbox;
   flex-direction: row;
