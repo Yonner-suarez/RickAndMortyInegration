@@ -1,10 +1,7 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  height: auto;
+  display: inline-block;
+  width: 30em;
+  height: 40em;
   background-color: rgba(0, 0, 0, 0.696);
   position: absolute;
   top: 50%;
@@ -43,7 +40,7 @@
 }
 .contimg {
   background-color: greenyellow;
-  width: 98%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   border-radius: 10px;
@@ -97,8 +94,32 @@
   letter-spacing: 2px;
   border-radius: 10px;
 }
+@media screen and (max-width: 1300px) {
+  .form {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .contimg {
+    background-color: greenyellow;
+  }
+  .exito {
+    width: 80%;
+    height: auto;
+  }
+  .error {
+    width: 80%;
+    height: auto;
+  }
 
-@media screen and (max-width: 450px) {
+  .boton {
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 7%;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
   .form {
     width: 80%;
     height: auto;
@@ -123,11 +144,12 @@
     margin-top: 5px;
   }
 }
-@media screen and (max-width: 1300px) {
+
+@media screen and (max-width: 450px) {
   .form {
-    width: 40%;
-    height: auto;
+    width: 80%;
     margin: 0 auto;
+    height: auto;
   }
   .contimg {
     background-color: greenyellow;
