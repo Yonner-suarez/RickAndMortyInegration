@@ -91,9 +91,33 @@
   font-family: "City Contrasts";
   border: none;
   cursor: pointer;
+  margin: 2%;
 }
 .boton:hover {
   background: greenyellow;
   box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
   transition-delay: 0.25s;
+}
+@media screen and (max-width: 450px) {
+  .form {
+    width: 100%;
+    margin: 0 auto;
+    height: 50%;
+  }
+  .contenedor {
+    background-color: transparent;
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .img {
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+  }
+  .subt {
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+  }
 }
