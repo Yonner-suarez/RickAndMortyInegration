@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const ComponentNav = ({ onSearch }) => {
   return (
     <div className={style.content}>
+      <SearchBar onSearch={onSearch} />
       <nav className={style.nav}>
         <Link to="/about">
           <button className={style.boton}>About</button>
@@ -15,8 +16,6 @@ const ComponentNav = ({ onSearch }) => {
         <Link to="/Favorites">
           <button className={style.boton}>Favorites</button>
         </Link>
-
-        <SearchBar onSearch={onSearch} />
       </nav>
     </div>
   );

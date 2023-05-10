@@ -1,15 +1,22 @@
 .contenedor {
-  background-color: aqua;
+  background-color: transparent;
   display: flex;
   margin: 0 auto;
   width: 90%;
+  border-radius: 20px;
 }
 h1 {
   margin-bottom: 0;
+  box-shadow: 2px 4px 5px;
+  letter-spacing: 5px;
+}
+h2 {
+  font-size: 40px !important;
+  letter-spacing: 5px;
 }
 .prop {
   font-size: xx-large;
-  font-style: oblique;
+  font-style: normal;
 }
 .info {
   background-color: rgba(172, 255, 47, 0.336);
@@ -19,6 +26,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 .img {
   background-color: rgba(0, 0, 0, 0.533);
@@ -43,4 +51,70 @@ h1 {
   transform: scale(1.1);
   transition: 0.5s;
   transition-delay: 0.5s;
+}
+@media screen and (max-width: 450px) {
+  .contenedor {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .imgReal {
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contenedor {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .imgReal {
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contenedor {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .img {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .imgReal {
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
 }

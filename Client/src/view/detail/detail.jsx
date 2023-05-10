@@ -10,22 +10,22 @@ const Detail = () => {
   const [character, setCharacter] = useState({});
 
   useEffect(() => {
-    axios(`/character/${id}`).then(
-      ({ data }) => {
-        if (data.name) {
-          setCharacter(data);
-        } else {
-          window.alert("No hay personajes con ese ID");
-        }
+    axios(`/character/${id}`).then(({ data }) => {
+      if (data.name) {
+        setCharacter(data);
+      } else {
+        window.alert("No hay personajes con ese ID");
       }
-    );
+    });
     // return setCharacter({});
   }, [id]);
   return (
     <div className={style.contenedor}>
       {character.name ? (
         <div className={style.info}>
-          <h1 className={style.personaje}>{character.name}</h1>
+          <b>
+            <h1 className={style.personaje}>{character.name}</h1>
+          </b>
           <h2 className={style.prop}>KEY | {character.id}</h2>
           <h2 className={style.prop}>ESPECIE | {character.species}</h2>
           <h2 className={style.prop}>GENDER | {character.gender}</h2>
