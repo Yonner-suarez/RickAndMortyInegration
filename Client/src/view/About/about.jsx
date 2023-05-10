@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div className={style.img}>
         <img
-          src="https://scontent-bog1-1.xx.fbcdn.net/v/t39.30808-6/244521550_1246182682563083_8366392019140271719_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFt_1MxIq6k2KH3BHzcxHnyXZKM7kJczc9dkozuQlzNz8becZ1R6eE0M1kmQhapn8aw1O8peRXyEKVkZScslNYS&_nc_ohc=6hxt5SckRbgAX-gqQlF&_nc_zt=23&_nc_ht=scontent-bog1-1.xx&oh=00_AfBk89uzWm7R4E9pHxSkG0UeHRS1qMlK2iMZt9Yx-KBzuA&oe=64426F1A"
+          src="https://scontent.fbaq1-1.fna.fbcdn.net/v/t39.30808-6/244521550_1246182682563083_8366392019140271719_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFt_1MxIq6k2KH3BHzcxHnyXZKM7kJczc9dkozuQlzNz8becZ1R6eE0M1kmQhapn8aw1O8peRXyEKVkZScslNYS&_nc_ohc=EE-RvphX1C0AX9OOMmM&_nc_zt=23&_nc_ht=scontent.fbaq1-1.fna&oh=00_AfAZtxWqXqKGFujFLgpLQop05G_R3KrySZfVid9SGXejDg&oe=646018DA"
           alt=""
           className={style.imgReal}
         />

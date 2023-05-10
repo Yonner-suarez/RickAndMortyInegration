@@ -70,6 +70,7 @@
     flex-direction: row;
     border: 2px solid #0f0;
     box-shadow: 0 0 10px #0f0;
+    border-radius: 20px;
   }
   .boton {
     width: 100%;
