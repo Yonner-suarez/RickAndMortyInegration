@@ -4,19 +4,19 @@
   margin: 0 auto;
   width: 90%;
   border-radius: 20px;
+  margin-top: 2%;
 }
 h1 {
   margin-bottom: 0;
   box-shadow: 2px 4px 5px;
   letter-spacing: 5px;
 }
-h2 {
-  font-size: 40px !important;
-  letter-spacing: 5px;
-}
+
 .prop {
   font-size: xx-large;
   font-style: normal;
+  font-size: 40px !important;
+  letter-spacing: 5px;
 }
 .info {
   background-color: rgba(172, 255, 47, 0.336);
@@ -58,6 +58,7 @@ h2 {
     height: auto;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 2%;
   }
   .img {
     width: 100%;
@@ -80,6 +81,7 @@ h2 {
     height: auto;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 2%;
   }
   .img {
     width: 60%;
@@ -102,6 +104,7 @@ h2 {
     height: auto;
     flex-direction: column;
     margin: 0 auto;
+    margin-top: 2%;
   }
   .img {
     width: 40%;

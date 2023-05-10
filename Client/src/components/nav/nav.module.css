@@ -9,8 +9,6 @@
   border-radius: 10px;
 }
 .nav {
-  border: 2px solid #0f0;
-  box-shadow: 0 0 10px #0f0;
   margin-top: 0.5em;
   position: relative;
 
@@ -51,6 +49,8 @@
   .nav {
     width: 100%;
     flex-direction: row;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 10px #0f0;
   }
   .boton {
     width: 100%;
@@ -68,6 +68,8 @@
   .nav {
     width: 100%;
     flex-direction: row;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 10px #0f0;
   }
   .boton {
     width: 100%;
