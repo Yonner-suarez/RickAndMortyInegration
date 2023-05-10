@@ -1,5 +1,4 @@
 .form {
-  background-color: aqua;
   display: inline-block;
   width: 30em;
   height: 40em;
@@ -102,7 +101,7 @@
   .form {
     width: 100%;
     margin: 0 auto;
-    height: 50%;
+    height: 60%;
   }
   .contenedor {
     background-color: transparent;

@@ -73,6 +73,13 @@ const SingUp = ({ postUser }) => {
 
   return (
     <form onSubmit={onS} className={style.form}>
+      <div className={style.contimg}>
+        <img
+          src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2015/07/114211-primer-juego-instagram-esta-basado-rick-morty.png?tf=3840x"
+          alt=""
+          className={style.img}
+        />
+      </div>
       <input
         type="text"
         name="email"
