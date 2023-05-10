@@ -80,14 +80,21 @@ const SingUp = ({ postUser }) => {
           className={style.img}
         />
       </div>
+      <br />
+      <br />
       <input
+        className={errors.email ? style.error : style.exito}
+        placeholder="Your email"
         type="text"
         name="email"
         value={newUser.email}
         onChange={onChange}
       />
+
       <span className={style.span}>{errors.email}</span>
       <input
+        className={errors.password ? style.error : style.exito}
+        placeholder="Your password"
         type="password"
         name="password"
         value={newUser.password}
@@ -95,6 +102,8 @@ const SingUp = ({ postUser }) => {
       />
       <span className={style.span}>{errors.password}</span>
       <input
+        className={errors.confirmPassword ? style.error : style.exito}
+        placeholder="Confirm your password"
         type="password"
         name="confirmPassword"
         value={newUser.confirmPassword}

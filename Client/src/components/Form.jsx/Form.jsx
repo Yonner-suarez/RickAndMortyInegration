@@ -28,7 +28,7 @@ const Form = ({ login }) => {
   return (
     <form action="" className={style.form}>
       <br />
-      <br />
+
       <div className={style.contenedor}>
         <img
           src="https://th.bing.com/th/id/OIP.2A69VpxwNuOcUMQAVz6swgHaDt?pid=ImgDet&rs=1"

@@ -13,7 +13,8 @@ import Swal from "sweetalert2";
 import { useDispatch } from "react-redux";
 import { getUser } from "./redux/action";
 
-axios.defaults.baseURL =  "https://backr-m-production.up.railway.app/rickandmorty";
+axios.defaults.baseURL =
+  "https://backr-m-production.up.railway.app/rickandmorty";
 
 function App() {
   const dispatch = useDispatch();
